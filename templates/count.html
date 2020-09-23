@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <h1>There are {{ count }} words</h1>
+    <h1>This is your Text:</h1>
+    {{ fulltext }}
+    <h1>This is additional information</h1>
+    <p>
+        {% for word, counttotal in wordcount %}
+    <br/>
+        {{word}} - {{counttotal}}
+
+        {% endfor %}
+
+
+
+
+    </p>
+</body>
+</html>
